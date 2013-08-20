@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0776B8DC17C335AB00F6C7FF /* ETTrackedEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776B8DB17C335AB00F6C7FF /* ETTrackedEventsViewController.m */; };
+		0776B8E017C36E9300F6C7FF /* EventTracker.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0776B8DD17C36E8700F6C7FF /* EventTracker.sqlite */; };
+		07837EFD17C3717C00FE3F02 /* EventTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07837EFB17C3717C00FE3F02 /* EventTracker.xcdatamodeld */; };
+		07837F0017C37D7A00FE3F02 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 07837EFF17C37D7900FE3F02 /* Event.m */; };
+		07837F0317C37D7A00FE3F02 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 07837F0217C37D7A00FE3F02 /* User.m */; };
+		E71B14E117C3B764005FEB1E /* ETEventsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E71B14E017C3B764005FEB1E /* ETEventsCustomCell.m */; };
+		E760F7B117C3227600814D5B /* ETDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E760F7B017C3227600814D5B /* ETDataManager.m */; };
+		E7B0FB1217C2601700C1A491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB1117C2601700C1A491 /* UIKit.framework */; };
+		E7B0FB1417C2601700C1A491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB1317C2601700C1A491 /* Foundation.framework */; };
+		E7B0FB1617C2601700C1A491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB1517C2601700C1A491 /* CoreGraphics.framework */; };
+		E7B0FB1C17C2601700C1A491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB1A17C2601700C1A491 /* InfoPlist.strings */; };
+		E7B0FB1E17C2601700C1A491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB1D17C2601700C1A491 /* main.m */; };
+		E7B0FB2417C2601700C1A491 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB2317C2601700C1A491 /* Default.png */; };
+		E7B0FB2617C2601700C1A491 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB2517C2601700C1A491 /* Default@2x.png */; };
+		E7B0FB2817C2601700C1A491 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB2717C2601700C1A491 /* Default-568h@2x.png */; };
+		E7B0FB3717C2611000C1A491 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB3617C2611000C1A491 /* ETAppDelegate.m */; };
+		E7B0FB3C17C2616800C1A491 /* ETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB3B17C2616800C1A491 /* ETViewController.m */; };
+		E7B0FB4117C2620A00C1A491 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB4017C2620A00C1A491 /* MainStoryboard.storyboard */; };
+		E7B0FB4617C2756400C1A491 /* ETUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB4517C2756400C1A491 /* ETUserDefaults.m */; };
+		E7B0FB4D17C27DAD00C1A491 /* ETAlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB4C17C27DAD00C1A491 /* ETAlertViewManager.m */; };
+		E7B0FB5217C27DDD00C1A491 /* ETAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB5117C27DDD00C1A491 /* ETAlertView.m */; };
+		E7B0FB5617C2899600C1A491 /* ETEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB5517C2899600C1A491 /* ETEventDetailViewController.m */; };
+		E7B0FB5917C28BF600C1A491 /* photo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB5717C28BF600C1A491 /* photo_placeholder.png */; };
+		E7B0FB5A17C28BF600C1A491 /* photo_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB5817C28BF600C1A491 /* photo_placeholder@2x.png */; };
+		E7B0FBAE17C2A3B200C1A491 /* ETSharedCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FBAD17C2A3B200C1A491 /* ETSharedCoreData.m */; };
+		E7B0FBB117C2A3F100C1A491 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FBAF17C2A3D400C1A491 /* CoreData.framework */; };
+		E7EA6C4E17C3787600400DBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EA6C4D17C3787600400DBD /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0776B8DA17C335AB00F6C7FF /* ETTrackedEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETTrackedEventsViewController.h; path = ETTrackedEventsViewController/ETTrackedEventsViewController.h; sourceTree = "<group>"; };
+		0776B8DB17C335AB00F6C7FF /* ETTrackedEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETTrackedEventsViewController.m; path = ETTrackedEventsViewController/ETTrackedEventsViewController.m; sourceTree = "<group>"; };
+		0776B8DD17C36E8700F6C7FF /* EventTracker.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = EventTracker.sqlite; path = "Core Data/EventTracker.sqlite"; sourceTree = "<group>"; };
+		07837EFC17C3717C00FE3F02 /* EventTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventTracker.xcdatamodel; sourceTree = "<group>"; };
+		07837EFE17C37D7900FE3F02 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = "Core Data/Model/Event.h"; sourceTree = "<group>"; };
+		07837EFF17C37D7900FE3F02 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = "Core Data/Model/Event.m"; sourceTree = "<group>"; };
+		07837F0117C37D7A00FE3F02 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = "Core Data/Model/User.h"; sourceTree = "<group>"; };
+		07837F0217C37D7A00FE3F02 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = "Core Data/Model/User.m"; sourceTree = "<group>"; };
+		E71B14DF17C3B764005FEB1E /* ETEventsCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETEventsCustomCell.h; path = "Views/Custom Cell/ETEventsCustomCell.h"; sourceTree = "<group>"; };
+		E71B14E017C3B764005FEB1E /* ETEventsCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETEventsCustomCell.m; path = "Views/Custom Cell/ETEventsCustomCell.m"; sourceTree = "<group>"; };
+		E760F7AF17C3227600814D5B /* ETDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETDataManager.h; path = Managers/DataManager/ETDataManager.h; sourceTree = "<group>"; };
+		E760F7B017C3227600814D5B /* ETDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETDataManager.m; path = Managers/DataManager/ETDataManager.m; sourceTree = "<group>"; };
+		E7B0FB0E17C2601700C1A491 /* EventsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B0FB1117C2601700C1A491 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7B0FB1317C2601700C1A491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7B0FB1517C2601700C1A491 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7B0FB1917C2601700C1A491 /* EventsTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventsTracker-Info.plist"; sourceTree = "<group>"; };
+		E7B0FB1B17C2601700C1A491 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7B0FB1D17C2601700C1A491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7B0FB1F17C2601700C1A491 /* EventsTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "EventsTracker-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E7B0FB2317C2601700C1A491 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E7B0FB2517C2601700C1A491 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E7B0FB2717C2601700C1A491 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E7B0FB3517C2611000C1A491 /* ETAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAppDelegate.h; sourceTree = "<group>"; };
+		E7B0FB3617C2611000C1A491 /* ETAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAppDelegate.m; sourceTree = "<group>"; };
+		E7B0FB3A17C2616800C1A491 /* ETViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETViewController.h; sourceTree = "<group>"; };
+		E7B0FB3B17C2616800C1A491 /* ETViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ETViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E7B0FB4017C2620A00C1A491 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E7B0FB4417C2756400C1A491 /* ETUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETUserDefaults.h; sourceTree = "<group>"; };
+		E7B0FB4517C2756400C1A491 /* ETUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETUserDefaults.m; sourceTree = "<group>"; };
+		E7B0FB4817C275CA00C1A491 /* ETConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETConstants.h; sourceTree = "<group>"; };
+		E7B0FB4B17C27DAD00C1A491 /* ETAlertViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlertViewManager.h; sourceTree = "<group>"; };
+		E7B0FB4C17C27DAD00C1A491 /* ETAlertViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlertViewManager.m; sourceTree = "<group>"; };
+		E7B0FB5017C27DDD00C1A491 /* ETAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlertView.h; sourceTree = "<group>"; };
+		E7B0FB5117C27DDD00C1A491 /* ETAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlertView.m; sourceTree = "<group>"; };
+		E7B0FB5417C2899600C1A491 /* ETEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETEventDetailViewController.h; path = ETEventDetailViewController/ETEventDetailViewController.h; sourceTree = "<group>"; };
+		E7B0FB5517C2899600C1A491 /* ETEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETEventDetailViewController.m; path = ETEventDetailViewController/ETEventDetailViewController.m; sourceTree = "<group>"; };
+		E7B0FB5717C28BF600C1A491 /* photo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_placeholder.png; sourceTree = "<group>"; };
+		E7B0FB5817C28BF600C1A491 /* photo_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_placeholder@2x.png"; sourceTree = "<group>"; };
+		E7B0FBAC17C2A3B200C1A491 /* ETSharedCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETSharedCoreData.h; path = "Core Data/SharedCoreData/ETSharedCoreData.h"; sourceTree = "<group>"; };
+		E7B0FBAD17C2A3B200C1A491 /* ETSharedCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ETSharedCoreData.m; path = "Core Data/SharedCoreData/ETSharedCoreData.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E7B0FBAF17C2A3D400C1A491 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E7EA6C4D17C3787600400DBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7B0FB0B17C2601600C1A491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7EA6C4E17C3787600400DBD /* QuartzCore.framework in Frameworks */,
+				E7B0FB1217C2601700C1A491 /* UIKit.framework in Frameworks */,
+				E7B0FBB117C2A3F100C1A491 /* CoreData.framework in Frameworks */,
+				E7B0FB1417C2601700C1A491 /* Foundation.framework in Frameworks */,
+				E7B0FB1617C2601700C1A491 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0776B8D917C3359100F6C7FF /* ETTrackedEventsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0776B8DA17C335AB00F6C7FF /* ETTrackedEventsViewController.h */,
+				0776B8DB17C335AB00F6C7FF /* ETTrackedEventsViewController.m */,
+			);
+			name = ETTrackedEventsViewController;
+			sourceTree = "<group>";
+		};
+		E71B14DE17C3B72E005FEB1E /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E71B14DF17C3B764005FEB1E /* ETEventsCustomCell.h */,
+				E71B14E017C3B764005FEB1E /* ETEventsCustomCell.m */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		E760F7AE17C3224900814D5B /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E760F7AF17C3227600814D5B /* ETDataManager.h */,
+				E760F7B017C3227600814D5B /* ETDataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		E7B0FB0517C2601600C1A491 = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB1717C2601700C1A491 /* EventsTracker */,
+				E7B0FB1017C2601700C1A491 /* Frameworks */,
+				E7B0FB0F17C2601700C1A491 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7B0FB0F17C2601700C1A491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB0E17C2601700C1A491 /* EventsTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7B0FB1017C2601700C1A491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7EA6C4D17C3787600400DBD /* QuartzCore.framework */,
+				E7B0FBAF17C2A3D400C1A491 /* CoreData.framework */,
+				E7B0FB1117C2601700C1A491 /* UIKit.framework */,
+				E7B0FB1317C2601700C1A491 /* Foundation.framework */,
+				E7B0FB1517C2601700C1A491 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7B0FB1717C2601700C1A491 /* EventsTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB9317C2A1B400C1A491 /* Core Data */,
+				E7B0FB4E17C27DB400C1A491 /* Views */,
+				E7B0FB4917C27D6E00C1A491 /* Managers */,
+				E7B0FB4217C2753200C1A491 /* Common */,
+				E7B0FB3D17C2620A00C1A491 /* Resources */,
+				E7B0FB3417C2611000C1A491 /* AppDelegate */,
+				E7B0FB3817C2616800C1A491 /* View Controllers */,
+				E7B0FB1817C2601700C1A491 /* Supporting Files */,
+			);
+			path = EventsTracker;
+			sourceTree = "<group>";
+		};
+		E7B0FB1817C2601700C1A491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB1917C2601700C1A491 /* EventsTracker-Info.plist */,
+				E7B0FB1A17C2601700C1A491 /* InfoPlist.strings */,
+				E7B0FB1D17C2601700C1A491 /* main.m */,
+				E7B0FB1F17C2601700C1A491 /* EventsTracker-Prefix.pch */,
+				E7B0FB2317C2601700C1A491 /* Default.png */,
+				E7B0FB2517C2601700C1A491 /* Default@2x.png */,
+				E7B0FB2717C2601700C1A491 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7B0FB3417C2611000C1A491 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB3517C2611000C1A491 /* ETAppDelegate.h */,
+				E7B0FB3617C2611000C1A491 /* ETAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E7B0FB3817C2616800C1A491 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0776B8D917C3359100F6C7FF /* ETTrackedEventsViewController */,
+				E7B0FB5317C2897B00C1A491 /* ETEventDetailViewController */,
+				E7B0FB3917C2616800C1A491 /* ETViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E7B0FB3917C2616800C1A491 /* ETViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB3A17C2616800C1A491 /* ETViewController.h */,
+				E7B0FB3B17C2616800C1A491 /* ETViewController.m */,
+			);
+			path = ETViewController;
+			sourceTree = "<group>";
+		};
+		E7B0FB3D17C2620A00C1A491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB3E17C2620A00C1A491 /* Images */,
+				E7B0FB3F17C2620A00C1A491 /* StoryBoard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E7B0FB3E17C2620A00C1A491 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB5717C28BF600C1A491 /* photo_placeholder.png */,
+				E7B0FB5817C28BF600C1A491 /* photo_placeholder@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E7B0FB3F17C2620A00C1A491 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB4017C2620A00C1A491 /* MainStoryboard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E7B0FB4217C2753200C1A491 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB4717C275A700C1A491 /* Constants */,
+				E7B0FB4317C2755300C1A491 /* User Defaults */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E7B0FB4317C2755300C1A491 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB4417C2756400C1A491 /* ETUserDefaults.h */,
+				E7B0FB4517C2756400C1A491 /* ETUserDefaults.m */,
+			);
+			name = "User Defaults";
+			path = "Common/User Defaults";
+			sourceTree = "<group>";
+		};
+		E7B0FB4717C275A700C1A491 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB4817C275CA00C1A491 /* ETConstants.h */,
+			);
+			name = Constants;
+			path = Common/Constants;
+			sourceTree = "<group>";
+		};
+		E7B0FB4917C27D6E00C1A491 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E760F7AE17C3224900814D5B /* DataManager */,
+				E7B0FB4A17C27D9200C1A491 /* AlertViewManager */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		E7B0FB4A17C27D9200C1A491 /* AlertViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB4B17C27DAD00C1A491 /* ETAlertViewManager.h */,
+				E7B0FB4C17C27DAD00C1A491 /* ETAlertViewManager.m */,
+			);
+			name = AlertViewManager;
+			path = Managers/AlertViewManager;
+			sourceTree = "<group>";
+		};
+		E7B0FB4E17C27DB400C1A491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E71B14DE17C3B72E005FEB1E /* Custom Cell */,
+				E7B0FB4F17C27DCB00C1A491 /* AlertView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E7B0FB4F17C27DCB00C1A491 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB5017C27DDD00C1A491 /* ETAlertView.h */,
+				E7B0FB5117C27DDD00C1A491 /* ETAlertView.m */,
+			);
+			name = AlertView;
+			path = Views/AlertView;
+			sourceTree = "<group>";
+		};
+		E7B0FB5317C2897B00C1A491 /* ETEventDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB5417C2899600C1A491 /* ETEventDetailViewController.h */,
+				E7B0FB5517C2899600C1A491 /* ETEventDetailViewController.m */,
+			);
+			name = ETEventDetailViewController;
+			sourceTree = "<group>";
+		};
+		E7B0FB9317C2A1B400C1A491 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0776B8DD17C36E8700F6C7FF /* EventTracker.sqlite */,
+				07837EFB17C3717C00FE3F02 /* EventTracker.xcdatamodeld */,
+				E7B0FBAB17C2A39A00C1A491 /* SharedCoreData */,
+				E7B0FB9817C2A23600C1A491 /* Model */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		E7B0FB9817C2A23600C1A491 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07837F0117C37D7A00FE3F02 /* User.h */,
+				07837F0217C37D7A00FE3F02 /* User.m */,
+				07837EFE17C37D7900FE3F02 /* Event.h */,
+				07837EFF17C37D7900FE3F02 /* Event.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E7B0FBAB17C2A39A00C1A491 /* SharedCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FBAC17C2A3B200C1A491 /* ETSharedCoreData.h */,
+				E7B0FBAD17C2A3B200C1A491 /* ETSharedCoreData.m */,
+			);
+			name = SharedCoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7B0FB0D17C2601600C1A491 /* EventsTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B0FB3117C2601700C1A491 /* Build configuration list for PBXNativeTarget "EventsTracker" */;
+			buildPhases = (
+				E7B0FB0A17C2601600C1A491 /* Sources */,
+				E7B0FB0B17C2601600C1A491 /* Frameworks */,
+				E7B0FB0C17C2601600C1A491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventsTracker;
+			productName = EventsTracker;
+			productReference = E7B0FB0E17C2601700C1A491 /* EventsTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7B0FB0617C2601600C1A491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ET;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mohammed Shahid";
+			};
+			buildConfigurationList = E7B0FB0917C2601600C1A491 /* Build configuration list for PBXProject "EventsTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7B0FB0517C2601600C1A491;
+			productRefGroup = E7B0FB0F17C2601700C1A491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7B0FB0D17C2601600C1A491 /* EventsTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7B0FB0C17C2601600C1A491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0776B8E017C36E9300F6C7FF /* EventTracker.sqlite in Resources */,
+				E7B0FB1C17C2601700C1A491 /* InfoPlist.strings in Resources */,
+				E7B0FB2417C2601700C1A491 /* Default.png in Resources */,
+				E7B0FB2617C2601700C1A491 /* Default@2x.png in Resources */,
+				E7B0FB2817C2601700C1A491 /* Default-568h@2x.png in Resources */,
+				E7B0FB4117C2620A00C1A491 /* MainStoryboard.storyboard in Resources */,
+				E7B0FB5917C28BF600C1A491 /* photo_placeholder.png in Resources */,
+				E7B0FB5A17C28BF600C1A491 /* photo_placeholder@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7B0FB0A17C2601600C1A491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B0FB1E17C2601700C1A491 /* main.m in Sources */,
+				E7B0FB3717C2611000C1A491 /* ETAppDelegate.m in Sources */,
+				E7B0FB3C17C2616800C1A491 /* ETViewController.m in Sources */,
+				E7B0FB4617C2756400C1A491 /* ETUserDefaults.m in Sources */,
+				E7B0FB4D17C27DAD00C1A491 /* ETAlertViewManager.m in Sources */,
+				E7B0FB5217C27DDD00C1A491 /* ETAlertView.m in Sources */,
+				E7B0FB5617C2899600C1A491 /* ETEventDetailViewController.m in Sources */,
+				E7B0FBAE17C2A3B200C1A491 /* ETSharedCoreData.m in Sources */,
+				E760F7B117C3227600814D5B /* ETDataManager.m in Sources */,
+				0776B8DC17C335AB00F6C7FF /* ETTrackedEventsViewController.m in Sources */,
+				07837EFD17C3717C00FE3F02 /* EventTracker.xcdatamodeld in Sources */,
+				07837F0017C37D7A00FE3F02 /* Event.m in Sources */,
+				07837F0317C37D7A00FE3F02 /* User.m in Sources */,
+				E71B14E117C3B764005FEB1E /* ETEventsCustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7B0FB1A17C2601700C1A491 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7B0FB1B17C2601700C1A491 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7B0FB2F17C2601700C1A491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7B0FB3017C2601700C1A491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7B0FB3217C2601700C1A491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventsTracker/EventsTracker-Prefix.pch";
+				INFOPLIST_FILE = "EventsTracker/EventsTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7B0FB3317C2601700C1A491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventsTracker/EventsTracker-Prefix.pch";
+				INFOPLIST_FILE = "EventsTracker/EventsTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7B0FB0917C2601600C1A491 /* Build configuration list for PBXProject "EventsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B0FB2F17C2601700C1A491 /* Debug */,
+				E7B0FB3017C2601700C1A491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B0FB3117C2601700C1A491 /* Build configuration list for PBXNativeTarget "EventsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B0FB3217C2601700C1A491 /* Debug */,
+				E7B0FB3317C2601700C1A491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07837EFB17C3717C00FE3F02 /* EventTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07837EFC17C3717C00FE3F02 /* EventTracker.xcdatamodel */,
+			);
+			currentVersion = 07837EFC17C3717C00FE3F02 /* EventTracker.xcdatamodel */;
+			name = EventTracker.xcdatamodeld;
+			path = ../EventTrackerDataStore/EventTrackerDataStore/EventTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7B0FB0617C2601600C1A491 /* Project object */;
+}

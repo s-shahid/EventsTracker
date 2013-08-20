@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Gtu-eC-Dwx">
+    <dependencies>
+        <deployment version="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Events-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ETViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JyX-BY-15M">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events" id="Ebl-Ci-znP">
+                        <barButtonItem key="rightBarButtonItem" title="Tracker" id="hAN-NB-89s">
+                            <connections>
+                                <segue destination="mw3-L5-CcN" kind="push" id="QaT-f0-2gX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventsTableView" destination="JyX-BY-15M" id="mDM-Hx-Fvo"/>
+                        <segue destination="xR5-1M-uWx" kind="push" identifier="detailEventSegue" id="bxU-Gd-DkQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="10"/>
+        </scene>
+        <!--Event Detail View Controller - Event Detail-->
+        <scene sceneID="8T9-6G-7ei">
+            <objects>
+                <viewController id="xR5-1M-uWx" customClass="ETEventDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tFg-kQ-dPs">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="K0c-OK-gJk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xR5-1M-uWx" id="4x6-j1-Mx7"/>
+                                    <outlet property="delegate" destination="xR5-1M-uWx" id="t9h-Vz-a7z"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event Detail" id="SKT-tS-uxa">
+                        <barButtonItem key="rightBarButtonItem" title="Tracker" id="Qhv-d0-7oZ">
+                            <connections>
+                                <segue destination="mw3-L5-CcN" kind="push" id="Pg0-XP-JWS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventDetailTableView" destination="K0c-OK-gJk" id="Tf6-b6-Cvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pN7-X2-xYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="748"/>
+        </scene>
+        <!--Tracked Events View Controller - Events Tracked-->
+        <scene sceneID="pRe-V6-xhu">
+            <objects>
+                <viewController id="mw3-L5-CcN" customClass="ETTrackedEventsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sOG-dW-u05">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="65O-74-8Xe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mw3-L5-CcN" id="KQh-KW-dl9"/>
+                                    <outlet property="delegate" destination="mw3-L5-CcN" id="fUo-qO-7jK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events Tracked" id="Q5G-PB-HmO"/>
+                    <connections>
+                        <outlet property="trackedEventsTableView" destination="65O-74-8Xe" id="xNY-5T-uQX"/>
+                        <segue destination="xR5-1M-uWx" kind="push" identifier="trackedEventDetailSegue" customClass="ETCustomSegue" id="3c0-H5-XY6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45j-eY-nBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549" y="15"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hsu-52-s2U">
+            <objects>
+                <navigationController id="Gtu-eC-Dwx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5cY-On-yYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="dwc-o2-bKQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qie-YY-EqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="10"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ETEventDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ETEventDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="trackButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="eventDetailTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ETTrackedEventsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ETTrackedEventsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="trackedEventsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ETViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ETViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="eventsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="QaT-f0-2gX"/>
+        <segue reference="3c0-H5-XY6"/>
+    </inferredMetricsTieBreakers>
+</document>

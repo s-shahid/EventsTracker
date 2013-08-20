@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7B0FB6817C2931700C1A491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB6717C2931700C1A491 /* UIKit.framework */; };
+		E7B0FB6A17C2931700C1A491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB6917C2931700C1A491 /* Foundation.framework */; };
+		E7B0FB6C17C2931700C1A491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB6B17C2931700C1A491 /* CoreGraphics.framework */; };
+		E7B0FB7217C2931700C1A491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB7017C2931700C1A491 /* InfoPlist.strings */; };
+		E7B0FB7417C2931700C1A491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB7317C2931700C1A491 /* main.m */; };
+		E7B0FB7817C2931700C1A491 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB7717C2931700C1A491 /* ETAppDelegate.m */; };
+		E7B0FB7A17C2931700C1A491 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB7917C2931700C1A491 /* Default.png */; };
+		E7B0FB7C17C2931700C1A491 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB7B17C2931700C1A491 /* Default@2x.png */; };
+		E7B0FB7E17C2931700C1A491 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB7D17C2931700C1A491 /* Default-568h@2x.png */; };
+		E7B0FB8117C2931700C1A491 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B0FB7F17C2931700C1A491 /* MainStoryboard.storyboard */; };
+		E7B0FB8417C2931700C1A491 /* ETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB8317C2931700C1A491 /* ETViewController.m */; };
+		E7B0FB8C17C2951700C1A491 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B0FB8A17C2950A00C1A491 /* CoreData.framework */; };
+		E7B0FB8F17C2965900C1A491 /* EventTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7B0FB8D17C2965900C1A491 /* EventTracker.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E7B0FB6417C2931700C1A491 /* EventTrackerDataStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventTrackerDataStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B0FB6717C2931700C1A491 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7B0FB6917C2931700C1A491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7B0FB6B17C2931700C1A491 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7B0FB6F17C2931700C1A491 /* EventTrackerDataStore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventTrackerDataStore-Info.plist"; sourceTree = "<group>"; };
+		E7B0FB7117C2931700C1A491 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7B0FB7317C2931700C1A491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7B0FB7517C2931700C1A491 /* EventTrackerDataStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventTrackerDataStore-Prefix.pch"; sourceTree = "<group>"; };
+		E7B0FB7617C2931700C1A491 /* ETAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAppDelegate.h; sourceTree = "<group>"; };
+		E7B0FB7717C2931700C1A491 /* ETAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAppDelegate.m; sourceTree = "<group>"; };
+		E7B0FB7917C2931700C1A491 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E7B0FB7B17C2931700C1A491 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E7B0FB7D17C2931700C1A491 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E7B0FB8017C2931700C1A491 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E7B0FB8217C2931700C1A491 /* ETViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETViewController.h; sourceTree = "<group>"; };
+		E7B0FB8317C2931700C1A491 /* ETViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETViewController.m; sourceTree = "<group>"; };
+		E7B0FB8A17C2950A00C1A491 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E7B0FB8E17C2965900C1A491 /* EventTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventTracker.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7B0FB6117C2931700C1A491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B0FB6817C2931700C1A491 /* UIKit.framework in Frameworks */,
+				E7B0FB8C17C2951700C1A491 /* CoreData.framework in Frameworks */,
+				E7B0FB6A17C2931700C1A491 /* Foundation.framework in Frameworks */,
+				E7B0FB6C17C2931700C1A491 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7B0FB5B17C2931700C1A491 = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB6D17C2931700C1A491 /* EventTrackerDataStore */,
+				E7B0FB6617C2931700C1A491 /* Frameworks */,
+				E7B0FB6517C2931700C1A491 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7B0FB6517C2931700C1A491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB6417C2931700C1A491 /* EventTrackerDataStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7B0FB6617C2931700C1A491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB8A17C2950A00C1A491 /* CoreData.framework */,
+				E7B0FB6717C2931700C1A491 /* UIKit.framework */,
+				E7B0FB6917C2931700C1A491 /* Foundation.framework */,
+				E7B0FB6B17C2931700C1A491 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7B0FB6D17C2931700C1A491 /* EventTrackerDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB7617C2931700C1A491 /* ETAppDelegate.h */,
+				E7B0FB7717C2931700C1A491 /* ETAppDelegate.m */,
+				E7B0FB8D17C2965900C1A491 /* EventTracker.xcdatamodeld */,
+				E7B0FB7F17C2931700C1A491 /* MainStoryboard.storyboard */,
+				E7B0FB8217C2931700C1A491 /* ETViewController.h */,
+				E7B0FB8317C2931700C1A491 /* ETViewController.m */,
+				E7B0FB6E17C2931700C1A491 /* Supporting Files */,
+			);
+			path = EventTrackerDataStore;
+			sourceTree = "<group>";
+		};
+		E7B0FB6E17C2931700C1A491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7B0FB6F17C2931700C1A491 /* EventTrackerDataStore-Info.plist */,
+				E7B0FB7017C2931700C1A491 /* InfoPlist.strings */,
+				E7B0FB7317C2931700C1A491 /* main.m */,
+				E7B0FB7517C2931700C1A491 /* EventTrackerDataStore-Prefix.pch */,
+				E7B0FB7917C2931700C1A491 /* Default.png */,
+				E7B0FB7B17C2931700C1A491 /* Default@2x.png */,
+				E7B0FB7D17C2931700C1A491 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7B0FB6317C2931700C1A491 /* EventTrackerDataStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B0FB8717C2931700C1A491 /* Build configuration list for PBXNativeTarget "EventTrackerDataStore" */;
+			buildPhases = (
+				E7B0FB6017C2931700C1A491 /* Sources */,
+				E7B0FB6117C2931700C1A491 /* Frameworks */,
+				E7B0FB6217C2931700C1A491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventTrackerDataStore;
+			productName = EventTrackerDataStore;
+			productReference = E7B0FB6417C2931700C1A491 /* EventTrackerDataStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7B0FB5C17C2931700C1A491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ET;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mohammed Shahid";
+			};
+			buildConfigurationList = E7B0FB5F17C2931700C1A491 /* Build configuration list for PBXProject "EventTrackerDataStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7B0FB5B17C2931700C1A491;
+			productRefGroup = E7B0FB6517C2931700C1A491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7B0FB6317C2931700C1A491 /* EventTrackerDataStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7B0FB6217C2931700C1A491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B0FB7217C2931700C1A491 /* InfoPlist.strings in Resources */,
+				E7B0FB7A17C2931700C1A491 /* Default.png in Resources */,
+				E7B0FB7C17C2931700C1A491 /* Default@2x.png in Resources */,
+				E7B0FB7E17C2931700C1A491 /* Default-568h@2x.png in Resources */,
+				E7B0FB8117C2931700C1A491 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7B0FB6017C2931700C1A491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B0FB7417C2931700C1A491 /* main.m in Sources */,
+				E7B0FB7817C2931700C1A491 /* ETAppDelegate.m in Sources */,
+				E7B0FB8417C2931700C1A491 /* ETViewController.m in Sources */,
+				E7B0FB8F17C2965900C1A491 /* EventTracker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7B0FB7017C2931700C1A491 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7B0FB7117C2931700C1A491 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7B0FB7F17C2931700C1A491 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7B0FB8017C2931700C1A491 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7B0FB8517C2931700C1A491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7B0FB8617C2931700C1A491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7B0FB8817C2931700C1A491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventTrackerDataStore/EventTrackerDataStore-Prefix.pch";
+				INFOPLIST_FILE = "EventTrackerDataStore/EventTrackerDataStore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7B0FB8917C2931700C1A491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventTrackerDataStore/EventTrackerDataStore-Prefix.pch";
+				INFOPLIST_FILE = "EventTrackerDataStore/EventTrackerDataStore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7B0FB5F17C2931700C1A491 /* Build configuration list for PBXProject "EventTrackerDataStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B0FB8517C2931700C1A491 /* Debug */,
+				E7B0FB8617C2931700C1A491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B0FB8717C2931700C1A491 /* Build configuration list for PBXNativeTarget "EventTrackerDataStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B0FB8817C2931700C1A491 /* Debug */,
+				E7B0FB8917C2931700C1A491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7B0FB8D17C2965900C1A491 /* EventTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7B0FB8E17C2965900C1A491 /* EventTracker.xcdatamodel */,
+			);
+			currentVersion = E7B0FB8E17C2965900C1A491 /* EventTracker.xcdatamodel */;
+			path = EventTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7B0FB5C17C2931700C1A491 /* Project object */;
+}

@@ -1,0 +1,31 @@
+//
+// Prefix header for all source files of the 'EventsTracker' target in the 'EventsTracker' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "ETUserDefaults.h"
+    #import "ETConstants.h"
+    #import "ETAlertViewManager.h"
+    #import "ETSharedCoreData.h"
+	#import "Event.h"
+	#import "User.h"
+    #import "ETDataManager.h"
+#endif
+
+#ifdef DEBUG
+
+#define ETLog(...) NSLog(@"%s %i: %@",__PRETTY_FUNCTION__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+
+#else
+
+#define ETLog(...) {}
+
+#endif
